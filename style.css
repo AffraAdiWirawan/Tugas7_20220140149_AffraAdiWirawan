@@ -1,0 +1,140 @@
+body {
+  background-image: url("images (1).jpeg"); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Fallback font */
+}
+
+.container {
+  text-align: center;
+  color: white;
+  padding: 50px 0; /* Add top and bottom padding */
+}
+p{
+  text-align: center;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3em; /* Increase heading size */
+  margin-bottom: 20px;
+  color: #fff; /* White text for better contrast */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+
+h2 {
+  font-family: Open Sans, sans-serif; /* Replace with your chosen font */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* Background options (choose one or experiment with others) */
+  background: linear-gradient(to right, #eee, #fff); /* Subtle light gradient */
+  /* OR */
+  /* background-image: url("subtle_pattern.png");  Replace with your image path */
+  /*   background-repeat: no-repeat;
+     background-position: center;  Adjust position as needed */
+  border: 2px dotted #ccc; /* Dotted border example (optional) */
+  color: #333; /* Darker text color */
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Softer shadow */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  border-radius: 10px;
+  padding: 5px 15px; /* Adjust padding for better text fit */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Add smooth hover effect */
+}
+
+/* Optional hover effect with border animation */
+h2:hover {
+  border: 2px solid #000; /* Change border color on hover */
+  animation: border-pulse 0.3s ease-in-out infinite alternate; /* Example animation */
+}
+
+@keyframes border-pulse {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); } /* Adjust pulse size */
+}
+
+
+
+
+.content-section { /* New class for sections */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 50px; /* Add spacing between sections */
+}
+
+.video-container,
+.image-container { /* Apply styles to specific sections */
+  width: calc(50% - 20px); /* Adjust width based on number of sections */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center;
+}
+
+.video-container h2,
+.image-container h2 { /* Maintain consistent heading style */
+  margin-bottom: 10px;
+}
+
+.video-grid,
+.image-gallery { /* Styles for video and image content */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.video-item,
+.image-card {
+  width: 250px; /* Adjust width based on content */
+}
+
+.video-item video,
+.image-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-card p {
+  margin-top: 5px;
+  font-size: 0.8em;
+  color: #333;
+}
+
+/* Additional enhancements (optional): */
+
+.container::after { /* Optional subtle border for the container */
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-top: 50px; /* Adjust spacing after container */
+}
+
+.navigation { /* Optional navigation bar (add HTML structure for this) */
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px; /* Adjust spacing after content sections */
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-
+}
